@@ -1,0 +1,8 @@
+.font-name {
+  font-family: var(--Headline);
+}
+#Text {
+  overflow: scroll;
+  height: 13vh;
+  overflow-x: hidden;
+}

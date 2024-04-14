@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/CSS/output.css" />
+  <link rel="stylesheet" href="/CSS/CSS_User/A.css" />
+  <link rel="stylesheet" href="/CSS/Root.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/CSS/CSS_User/Drag.css" />
+  <link rel="stylesheet" href="/CSS/CSS_User/InputField.css" />
+  <link rel="stylesheet" href="/CSS/CSS_User/B.css">
+</head>
+
+<body>
+  <main>
+    <section id="SEC-1" class="h-Full w-WFull">
+      <div id="container" class="relative flex h-[80vh] w-WFull flex-col">
+        <nav id="navbar" class="h-[12vh] w-full">
+          <ul class="flex h-[6vh] items-center justify-between" style="margin: 7px 11px">
+            <li>
+              <h1 class="headline-main">PURPLE.TV</h1>
+            </li>
+            <li>
+              <input id="InputField" type="text" placeholder="Search anime by URL" />
+            </li>
+            <li class="flex w-[15vw] items-center justify-between">
+              <span class="font">MOVIES</span>
+              <span class="font">SERIES</span>
+              <span class="font">ABOUT</span>
+              <span class="font">CONTACT</span>
+            </li>
+          </ul>
+        </nav>
+        <div id="Image_Container"
+          class="relative flex h-[68vh] w-[97vw] items-end justify-center overflow-hidden rounded-lg"
+          style="margin: auto">
+          <img id="img" src="/IMG/up.png" class="absolute h-full w-full rounded-lg object-cover" alt="" />
+          <div id="Api-Box" class="flex h-full w-full items-center justify-center">
+            <label for="file" class="custum-file-upload">
+              <input id="file" type="file" />
+            </label>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="relative flex h-[18vh] w-WFull flex-row items-center">
+        <div id="box" class="h-[90%] w-[26vw] border-r-2 border-gray-500">
+          <ul class="p-[19px]">
+            <li>
+              <h1 id="Headline" class="font text-[2rem]">Beyond The</h1>
+            </li>
+            <li>
+              <h1 id="Headline-2" class="font text-[4rem]">SEPTEMBER SKY</h1>
+            </li>
+          </ul>
+        </div>
+        <div id="box2" class="flex h-[90%] w-[44vw]">
+          <p id="para" class="text-left">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+            iste fugiat eveniet, sed sapiente, molestias sint porro ipsum
+            nesciunt ullam veritatis soluta quam sunt doloremque doloribus
+            magni totam quo nam! Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Deserunt animi perspiciatis rerum, nam optio
+            sequi veniam quidem magnam sed sapiente officiis ipsam. Similique
+            voluptas ab eaque incidunt quas sint totam!
+          </p>
+        </div>
+        <div id="box3" class="absolute bottom-2 right-0 flex h-[16vh] w-[20vw] items-center justify-end">
+          <div id="box3-content">
+            <ul class="right-[9px] top-[16px] p-[8px]">
+              <li id="li">
+                <h3 class="font-2">RELEASE DATE:</h3>
+              </li>
+              <li>
+                <h3 id="font-thin" class="font text-[1.3rem]">
+                  16 SEPTEMBER 2024
+                </h3>
+              </li>
+            </ul>
+            <button id="btn" class="h-[5vh] w-[8vw]">LEARN MORE</button>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <section id="SEC-2" class="absolute bottom-0 h-[49vh] w-WFull bg-[#000000c9]">
+
+    </section>
+  </main>
+  <script type="module" src="/JS/Api.js"></script>
+  <script type="module" src="/JS/Fetching.js"></script>
+</body>
+
+</html>
