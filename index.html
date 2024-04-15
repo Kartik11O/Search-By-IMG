@@ -86,7 +86,32 @@
       </footer>
     </section>
     <section id="SEC-2" class="absolute bottom-0 h-[49vh] w-WFull bg-[#000000c9]">
+      <div id="Banner" class="h-[22vh] w-full bg-red-500">
+        <img src="${Banner}" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div id="Poster" class="absolute bottom-[2rem] left-[1rem] h-[34vh] w-[12vw] bg-white">
+        <img src="${Poster}" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div id="Details" class="h-[11vw] w-[86vw] flex" style="margin-left: 16rem">
+        <div id="Name">
+          <ul class="text-OffWhite ">
+            <li>
+              <h1 id="border-line" class="text-[3rem] font-name font-bold h-[6.4vh] relative ">JUJUTSU
+                KAISEN</h1>
+            </li>
+            <li class="font-name flex gap-[28px] text-[1.5rem] pl-[7px]">
+              <span>Ep${Ep}</span><span>at${TimeStart}</span>
+              <span>2020</span> <span>${similarity}%</span>
+            </li>
+            <li>
+              <p id="Text" class="font-name w-[33vw] mt-[10px] pl-[7px]">${Info}</p>
+            </li>
+          </ul>
+        </div>
+        <div id="result" class="w-[18vw] h-[19vh] mp-[59px]">
 
+        </div>
+      </div>
     </section>
   </main>
   <script type="module" src="/JS/Api.js"></script>
