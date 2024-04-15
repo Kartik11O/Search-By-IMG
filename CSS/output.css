@@ -636,6 +636,10 @@ video {
   margin-top: 69px;
 }
 
+.mt-\[72px\] {
+  margin-top: 72px;
+}
+
 .flex {
   display: flex;
 }
@@ -760,6 +764,10 @@ video {
   width: 100%;
 }
 
+.w-\[34vw\] {
+  width: 34vw;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -794,6 +802,10 @@ video {
 
 .gap-\[28px\] {
   gap: 28px;
+}
+
+.gap-\[17px\] {
+  gap: 17px;
 }
 
 .overflow-hidden {
@@ -847,6 +859,10 @@ video {
 
 .pl-\[7px\] {
   padding-left: 7px;
+}
+
+.pt-\[8px\] {
+  padding-top: 8px;
 }
 
 .text-left {
