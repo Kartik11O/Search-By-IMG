@@ -87,7 +87,13 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 2px;
   border: 1px solid #c0c0c0;
+}
+#UserIMG--Name {
+  color: #000;
+  margin: auto;
+  padding: 3px 10px;
+  font-family: var(--Headline);
 }
