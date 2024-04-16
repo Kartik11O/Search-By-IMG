@@ -48,8 +48,10 @@ body {
   padding-left: 6px;
 }
 #para {
+  width: 42vw;
   margin: auto;
   padding: 12px;
+  margin-left: 0px;
 }
 #li {
   height: 16px;
@@ -95,4 +97,12 @@ body {
   margin: auto;
   padding: 3px 10px;
   font-family: var(--Headline);
+  font-size: 1rem;
+}
+#btn2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  background-color: red;
 }

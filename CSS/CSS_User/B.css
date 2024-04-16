@@ -5,4 +5,6 @@
   overflow: scroll;
   height: 13vh;
   overflow-x: hidden;
+  font-size: 1.3rem;
+  padding: 0px 7px;
 }

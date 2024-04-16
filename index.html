@@ -47,8 +47,8 @@
         </div>
       </div>
       <footer id="footer" class="relative flex h-[18vh] w-WFull flex-row items-center">
-        <div id="box" class="h-[90%] w-[26vw] border-r-2 border-gray-500">
-          <ul class="p-[19px]">
+        <div id="box" class="h-[90%] w-[21vw] border-r-2 border-gray-500">
+          <ul class="p-[23px] pl-[30px]">
             <li>
               <h1 id="Headline" class="font text-[2rem]">Beyond The</h1>
             </li>
@@ -85,19 +85,20 @@
         </div>
       </footer>
     </section>
-    <section id="SEC-2" class="absolute bottom-0 h-[49vh] w-WFull bg-[#000000c9]">
-      <div id="Banner" class="h-[22vh] w-full bg-red-500">
+    <section id="SEC-2"
+      class="absolute bottom-0 h-[49vh] w-WFull bg-[#000000c9] flex justify-center items-center flex-row">
+      <button id="btn2">asdsa</button>
+      <div id="Banner" class="h-[22vh] w-full bg-red-500 absolute" style="top: 0;">
         <img src="${Banner}" class="h-full w-full object-cover" alt="" />
       </div>
-      <div id="Poster" class="absolute bottom-[2rem] left-[1rem] h-[34vh] w-[12vw] bg-white">
+      <div id="Poster" class=" bottom-[2rem] left-[1rem] h-[34vh] w-[12vw] bg-white relative " style="top: 3rem;">
         <img src="${Poster}" class="h-full w-full object-cover" alt="" />
       </div>
-      <div id="Details" class="h-[11vw] w-[86vw] flex" style="margin-left: 16rem">
-        <div id="Name">
+      <div id="Details" class="h-[41vh] w-[86vw] flex items-end" style="margin-left: 2.3rem">
+        <div id="Name" class=" h-[23vh] w-[33vw]">
           <ul class="text-OffWhite ">
             <li>
-              <h1 id="border-line" class="text-[3rem] font-name font-bold h-[6.4vh] relative ">JUJUTSU
-                KAISEN</h1>
+              <h1 id="border-line" class="text-[3rem] font-name font-bold h-[5.7vh] relative ">${Name_R || Name_E}</h1>
             </li>
             <li class="font-name flex gap-[28px] text-[1.5rem] pl-[7px]">
               <span>Ep${Ep}</span><span>at${TimeStart}</span>
@@ -108,25 +109,22 @@
             </li>
           </ul>
         </div>
-        <div id="result" class="w-[34vw] h-[19vh] mt-[72px] ml-[13px] bg-black flex gap-[17px]">
+        <div id="result" class="w-[34vw] h-[16.3vh] mt-[0px] ml-[13px]  flex gap-[17px]">
           <div id="UserIMG"
-            class="w-[16vw] h-[19vh] relative flex justify-center items-start flex-col text-[17px] text-center">
-            <img
-              src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/09/Jujutsu-Kaisen-Chapter-237-Release-Date.jpg"
-              alt="" class="w-full h-[16vh] pt-[8px] object-cover ">
+            class="w-[16vw] h-[18vh] relative flex justify-center items-start flex-col text-[17px] text-center">
+            <img src="" alt="" class="w-full h-[16vh] pt-[8px] object-cover" data-img>
             <span id="UserIMG--Name" class=" text-OffWhite">Your Image</span>
           </div>
           <div id="resultIMG"
-            class="w-[16vw] h-[19vh] relative flex justify-center items-start flex-col text-[17px] text-center">
-            <img
-              src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/09/Jujutsu-Kaisen-Chapter-237-Release-Date.jpg"
-              alt="" class="w-full h-[16vh] pt-[8px] object-cover ">
+            class="w-[16vw] h-[18vh] relative flex justify-center items-start flex-col text-[17px] text-center">
+            <video class="w-full h-[16vh] pt-[8px] object-cover" src="${Video}" autoplay="true" loop="true"></video>
             <span id="UserIMG--Name" class=" text-OffWhite">Search Image</span>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <script type="module" src="/JS/Jq.js"></script>
   <script type="module" src="/JS/Api.js"></script>
   <script type="module" src="/JS/Fetching.js"></script>
 </body>

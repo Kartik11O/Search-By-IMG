@@ -41,19 +41,19 @@ export var query = `
 
 `;
 var variables = {
-    ids: 113415,
-    page: 1,
-    perPage: 3
+  ids: 113415,
+  page: 1,
+  perPage: 3
 };
 
 export var options = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-    },
-    body: JSON.stringify({
-        query: query,
-        variables: variables
-    })
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
+  body: JSON.stringify({
+    query: query,
+    variables: variables
+  })
 };
