@@ -13,21 +13,22 @@
   <link rel="stylesheet" href="/CSS/CSS_User/Drag.css" />
   <link rel="stylesheet" href="/CSS/CSS_User/InputField.css" />
   <link rel="stylesheet" href="/CSS/CSS_User/B.css">
+
 </head>
 
 <body>
   <main>
     <section id="SEC-1" class="h-Full w-WFull">
       <div id="container" class="relative flex h-[80vh] w-WFull flex-col">
-        <nav id="navbar" class="h-[12vh] w-full">
-          <ul class="flex h-[6vh] items-center justify-between" style="margin: 7px 11px">
+        <nav id="navbar" class="h-[8vh] w-full">
+          <ul class="flex h-[100%] items-center justify-between text-[1.2rem]" style="margin: 7px 11px">
             <li>
-              <h1 class="headline-main">PURPLE.TV</h1>
+              <h1 class="headline-main  sm:text-xl">PURPLE.TV</h1>
             </li>
             <li>
               <input id="InputField" type="text" placeholder="Search anime by URL" />
             </li>
-            <li class="flex w-[15vw] items-center justify-between">
+            <li class="flex  items-center justify-between">
               <span class="font">MOVIES</span>
               <span class="font">SERIES</span>
               <span class="font">ABOUT</span>
@@ -36,12 +37,12 @@
           </ul>
         </nav>
         <div id="Image_Container"
-          class="relative flex h-[68vh] w-[97vw] items-end justify-center overflow-hidden rounded-lg"
+          class="relative flex h-[71vh] w-[97vw] items-end justify-center overflow-hidden rounded-lg"
           style="margin: auto">
           <img id="img" src="/IMG/up.png" class="absolute h-full w-full rounded-lg object-cover" alt="" />
           <div id="Api-Box" class="flex h-full w-full items-center justify-center">
             <label for="file" class="custum-file-upload">
-              <input id="file" type="file" />
+              <input id="file" type="file" accept="image/*" />
             </label>
           </div>
         </div>
@@ -59,13 +60,13 @@
         </div>
         <div id="box2" class="flex h-[90%] w-[44vw]">
           <p id="para" class="text-left">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-            iste fugiat eveniet, sed sapiente, molestias sint porro ipsum
-            nesciunt ullam veritatis soluta quam sunt doloremque doloribus
-            magni totam quo nam! Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Deserunt animi perspiciatis rerum, nam optio
-            sequi veniam quidem magnam sed sapiente officiis ipsam. Similique
-            voluptas ab eaque incidunt quas sint totam!
+            Are you on the hunt for an anime series but find yourself at a loss, only having an image to go by? Don't
+            worry! With
+            Purple.Tv's innovative image recognition bot, your search just got easier. Our state-of-the-art technology
+            allows you to
+            identify any anime series with just a simple upload of its image. Say goodbye to the frustration of not
+            knowing the
+            title and let Purple.Tv guide you to your next binge-worthy watch
           </p>
         </div>
         <div id="box3" class="absolute bottom-2 right-0 flex h-[16vh] w-[20vw] items-center justify-end">
@@ -86,8 +87,8 @@
       </footer>
     </section>
     <section id="SEC-2"
-      class="absolute bottom-0 h-[49vh] w-WFull bg-[#000000c9] flex justify-center items-center flex-row">
-      <button id="btn2">asdsa</button>
+      class="absolute hidden bottom-0 h-[49vh] w-WFull bg-[#000000c9]  justify-center items-center flex-row">
+      <button id="btn2">X</button>
       <div id="Banner" class="h-[22vh] w-full bg-red-500 absolute" style="top: 0;">
         <img src="${Banner}" class="h-full w-full object-cover" alt="" />
       </div>
@@ -125,6 +126,7 @@
     </section>
   </main>
   <script type="module" src="/JS/Jq.js"></script>
+  <script type="module" src="/JS/Close-btn.js"></script>
   <script type="module" src="/JS/Api.js"></script>
   <script type="module" src="/JS/Fetching.js"></script>
 </body>

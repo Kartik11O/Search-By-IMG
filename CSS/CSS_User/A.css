@@ -52,6 +52,9 @@ body {
   margin: auto;
   padding: 12px;
   margin-left: 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #28282b;
 }
 #li {
   height: 16px;
@@ -104,5 +107,19 @@ body {
   top: 0;
   right: 0;
   z-index: 99;
-  background-color: red;
+  background-color: #00000061;
+  font-family: var(--Headline);
+  width: 3vw;
+  height: 3vh;
+  font-size: 1.34rem;
+  margin: 16px;
+  /* padding: 2px; */
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+#btn2:hover {
+  background-color: #000000;
+  border-radius: 0px;
 }
