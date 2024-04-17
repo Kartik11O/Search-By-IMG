@@ -89,6 +89,7 @@
     <section id="SEC-2"
       class="absolute hidden bottom-0 h-[49vh] w-WFull bg-[#000000c9]  justify-center items-center flex-row">
       <button id="btn2">X</button>
+      <!-- <div id="remover" class=" absolute"> -->
       <div id="Banner" class="h-[22vh] w-full bg-red-500 absolute" style="top: 0;">
         <img src="${Banner}" class="h-full w-full object-cover" alt="" />
       </div>
@@ -99,7 +100,8 @@
         <div id="Name" class=" h-[23vh] w-[33vw]">
           <ul class="text-OffWhite ">
             <li>
-              <h1 id="border-line" class="text-[3rem] font-name font-bold h-[5.7vh] relative ">${Name_R || Name_E}</h1>
+              <h1 id="border-line" class="text-[3rem] font-name font-bold h-[5.7vh] relative ">${Name_R || Name_E}
+              </h1>
             </li>
             <li class="font-name flex gap-[28px] text-[1.5rem] pl-[7px]">
               <span>Ep${Ep}</span><span>at${TimeStart}</span>
@@ -123,12 +125,14 @@
           </div>
         </div>
       </div>
+      <!-- </div> -->
     </section>
   </main>
   <script type="module" src="/JS/Jq.js"></script>
+  <script type="module" src="/JS/Fetching.js"></script>
   <script type="module" src="/JS/Close-btn.js"></script>
   <script type="module" src="/JS/Api.js"></script>
-  <script type="module" src="/JS/Fetching.js"></script>
+  <script type="module" src="/JS/AddToBody.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,7 @@
-export var query = ` 
+const Meo_Api = "https://api.trace.moe/search?anilistInfo&url="
+const Anilist_Api = "https://graphql.anilist.co"
+
+var query = `
   query ($ids: [Int], $page: Int, $perPage: Int, $search: String) {
   Page(page: $page, perPage: $perPage) {
     pageInfo {
@@ -13,6 +16,7 @@ export var query = `
       title {
         romaji
       }
+        bannerImage
       coverImage {
         extraLarge
       }
@@ -40,20 +44,4 @@ export var query = `
 }
 
 `;
-var variables = {
-  ids: 113415,
-  page: 1,
-  perPage: 3
-};
-
-export var options = {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
-  },
-  body: JSON.stringify({
-    query: query,
-    variables: variables
-  })
-};
+export { Meo_Api, Anilist_Api, query }
