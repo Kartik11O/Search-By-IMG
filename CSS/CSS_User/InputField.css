@@ -1,5 +1,5 @@
 #InputField {
-  width: 25vw;
+  width: clamp(256px, 25vw, 480px);
   height: 4vh;
   border: 2px solid lightgrey;
   border-radius: 11px;

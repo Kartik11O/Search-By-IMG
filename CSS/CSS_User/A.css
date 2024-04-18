@@ -42,7 +42,8 @@ body {
   font-weight: 100 !important;
 }
 #Headline {
-  height: 25px;
+  line-height: 2px;
+  padding-top: 15px;
 }
 #Headline-2 {
   padding-left: 6px;

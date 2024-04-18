@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="/CSS/CSS_User/Drag.css" />
   <link rel="stylesheet" href="/CSS/CSS_User/InputField.css" />
   <link rel="stylesheet" href="/CSS/CSS_User/B.css">
+  <link rel="stylesheet" media="(max-width:480px)" href="/CSS/Phone/A.css">
+  <link rel="stylesheet" href="/CSS/Phone/Landsapce.css">
 
 </head>
 
@@ -28,7 +30,7 @@
             <li>
               <input id="InputField" type="text" placeholder="Search anime by URL" />
             </li>
-            <li class="flex  items-center justify-between">
+            <li id="hide" class="flex  items-center justify-between sm:hidden">
               <span class="font">MOVIES</span>
               <span class="font">SERIES</span>
               <span class="font">ABOUT</span>
@@ -48,13 +50,13 @@
         </div>
       </div>
       <footer id="footer" class="relative flex h-[18vh] w-WFull flex-row items-center">
-        <div id="box" class="h-[90%] w-[21vw] border-r-2 border-gray-500">
-          <ul class="p-[23px] pl-[30px]">
+        <div id="box" class="h-[90%] w-[403px] border-r-2 border-gray-500 flex justify-center items-center ">
+          <ul class="flex  items-center">
             <li>
               <h1 id="Headline" class="font text-[2rem]">Beyond The</h1>
+              <h1 id="Headline-2" class="font text-[3rem]">SEPTEMBER SKY</h1>
             </li>
             <li>
-              <h1 id="Headline-2" class="font text-[4rem]">SEPTEMBER SKY</h1>
             </li>
           </ul>
         </div>
@@ -74,33 +76,36 @@
             <ul class="right-[9px] top-[16px] p-[8px]">
               <li id="li">
                 <h3 class="font-2">RELEASE DATE:</h3>
-              </li>
-              <li>
                 <h3 id="font-thin" class="font text-[1.3rem]">
                   16 SEPTEMBER 2024
                 </h3>
               </li>
+
             </ul>
-            <button id="btn" class="h-[5vh] w-[8vw]">LEARN MORE</button>
+            <button id="btn" class="h-[47px] w-[153px]">LEARN MORE</button>
           </div>
         </div>
       </footer>
     </section>
-    <section id="SEC-2"
-      class="absolute hidden bottom-0 h-[49vh] w-WFull bg-[#000000c9]  justify-center items-center flex-row">
+    <section id="SEC-2" class="absolute hidden bottom-0 h-[49vh] w-WFull bg-[#000000c9]  items-end ">
       <button id="btn2">X</button>
-      <!-- <div id="remover" class=" absolute"> -->
-      <div id="Banner" class="h-[22vh] w-full bg-red-500 absolute" style="top: 0;">
+
+      <div id="Banner" class=" h-[22vh] w-full bg-red-500 absolute" style="top: 0;">
         <img src="${Banner}" class="h-full w-full object-cover" alt="" />
       </div>
-      <div id="Poster" class=" bottom-[2rem] left-[1rem] h-[34vh] w-[12vw] bg-white relative " style="top: 3rem;">
+      <div id="Poster" class=" bottom-[2rem] left-[1rem] h-[34vh] w-[12vw] bg-white relative mb-[6rem] "
+        style="top: 3rem; ">
         <img src="${Poster}" class="h-full w-full object-cover" alt="" />
       </div>
-      <div id="Details" class="h-[41vh] w-[86vw] flex items-end" style="margin-left: 2.3rem">
-        <div id="Name" class=" h-[23vh] w-[33vw]">
+      <div id="Details" class="h-[27vh] w-[86vw] flex items-end" style="margin-left: 2.3rem">
+        <div id="Name" class=" h-[27vh] w-[33vw]">
           <ul class="text-OffWhite ">
             <li>
-              <h1 id="border-line" class="text-[3rem] font-name font-bold h-[5.7vh] relative ">${Name_R || Name_E}
+              <h1 id="border-line"
+                class="text-[2.1rem] leading-[59px] font-name font-bold h-[5.7vh] relative w-[max-content]  ">
+                ${Name_R
+                ||
+                Name_E}
               </h1>
             </li>
             <li class="font-name flex gap-[28px] text-[1.5rem] pl-[7px]">
@@ -108,30 +113,31 @@
               <span>2020</span> <span>${similarity}%</span>
             </li>
             <li>
-              <p id="Text" class="font-name w-[33vw] mt-[10px] pl-[7px]">${Info}</p>
+              <p id="Text" class="font-name w-[33vw] pl-[7px]">${Info}</p>
             </li>
           </ul>
         </div>
-        <div id="result" class="w-[34vw] h-[16.3vh] mt-[0px] ml-[13px]  flex gap-[17px]">
-          <div id="UserIMG"
-            class="w-[16vw] h-[18vh] relative flex justify-center items-start flex-col text-[17px] text-center">
+        <div id="result" class="h-[20vh] mt-[0px] ml-[13px]  flex gap-[17px]" style="width: clamp(300px, 34vw, 652px);">
+          <div id="UserIMG" class=" h-[15vh] relative flex justify-center items-start flex-col text-[17px] text-center"
+            style="width: clamp(300px, 16vw, 307px);;">
             <img src="" alt="" class="w-full h-[16vh] pt-[8px] object-cover" data-img>
             <span id="UserIMG--Name" class=" text-OffWhite">Your Image</span>
           </div>
           <div id="resultIMG"
-            class="w-[16vw] h-[18vh] relative flex justify-center items-start flex-col text-[17px] text-center">
-            <video class="w-full h-[16vh] pt-[8px] object-cover" src="${Video}" autoplay="true" loop="true"></video>
+            class=" h-[15vh] relative flex justify-center items-start flex-col text-[17px] text-center"
+            style="width:clamp(300px, 16vw, 307px); ;">
+            <video class="w-full h-[15vh] pt-[8px] object-cover" src="${Video}" autoplay="true" loop="true"></video>
             <span id="UserIMG--Name" class=" text-OffWhite">Search Image</span>
           </div>
         </div>
       </div>
-      <!-- </div> -->
+
     </section>
   </main>
   <script type="module" src="/JS/Jq.js"></script>
   <script type="module" src="/JS/Fetching.js"></script>
-  <script type="module" src="/JS/Close-btn.js"></script>
   <script type="module" src="/JS/Api.js"></script>
+  <script type="module" src="/JS/Close-btn.js"></script>
   <script type="module" src="/JS/AddToBody.js"></script>
 </body>
 

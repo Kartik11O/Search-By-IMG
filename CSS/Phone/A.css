@@ -1,0 +1,67 @@
+html {
+  font-size: 50%;
+}
+.headline-main {
+  font-size: 2rem;
+  padding-left: 0px;
+}
+#hide {
+  display: none !important;
+}
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(100px, 50vw, 160px);
+  padding: 3px;
+}
+#Details {
+  width: clamp(300px, 59vw, 300px);
+  overflow: scroll;
+}
+#Poster {
+  width: 39vw;
+}
+#Name {
+  display: flex;
+  margin: auto;
+  width: 56vw;
+}
+#Text {
+  width: 55vw;
+}
+#result {
+  height: 19vh;
+}
+#border-line {
+  height: 4.7vh;
+  line-height: 33px;
+}
+#box3 {
+  display: none;
+}
+#box2 {
+  width: 64vw;
+}
+#para {
+  width: 55vw;
+  margin: auto;
+  padding: 0px;
+  margin-left: 11px;
+  font-size: 8px;
+  font-weight: 500;
+  color: #28282b;
+}
+#Headline {
+  line-height: 2px;
+}
+#Headline-2 {
+  padding-left: 0px;
+  font-size: 2.4rem;
+}
+.font {
+  font-family: var(--Headline);
+  font-weight: bolder;
+  padding: 0px;
+  color: #28282b;
+}
