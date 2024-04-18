@@ -36,6 +36,7 @@ html {
 #border-line {
   height: 4.7vh;
   line-height: 33px;
+  font-size: 1.7rem;
 }
 #box3 {
   display: none;

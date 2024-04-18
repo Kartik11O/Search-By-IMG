@@ -9,6 +9,18 @@
   #hide {
     display: none !important;
   }
+  #InputField {
+    width: clamp(256px, 25vw, 480px);
+    height: 20px;
+    border: 2px solid lightgrey;
+    border-radius: 11px;
+    padding: 5px 11px;
+    color: #bbb;
+    outline: none;
+    transition: 0.3s;
+    font-family: var(--Headline);
+    cursor: pointer;
+  }
   #box {
     display: flex;
     align-items: center;
@@ -17,10 +29,12 @@
     padding: 3px;
   }
   #Details {
-    width: clamp(300px, 59vw, 300px);
-    overflow: scroll;
+    overflow-x: hidden;
   }
-
+  .font-name {
+    font-family: var(--Headline);
+    font-size: 1rem;
+  }
   #Name {
     display: flex;
     margin: auto;
@@ -28,13 +42,16 @@
   }
   #Text {
     width: 55vw;
+    font-size: 1rem;
   }
   #result {
     height: 19vh;
+    width: clamp(193px, 29vw, 193px);
   }
   #border-line {
     height: 4.7vh;
-    line-height: 33px;
+    line-height: 18px;
+    font-size: 1.3rem;
   }
   #box3 {
     display: none;

@@ -108,7 +108,7 @@
                 Name_E}
               </h1>
             </li>
-            <li class="font-name flex gap-[28px] text-[1.5rem] pl-[7px]">
+            <li class="font-name flex gap-[28px] text-[1.5rem] pl-[7px] pb-[1px] p">
               <span>Ep${Ep}</span><span>at${TimeStart}</span>
               <span>2020</span> <span>${similarity}%</span>
             </li>
@@ -118,14 +118,13 @@
           </ul>
         </div>
         <div id="result" class="h-[20vh] mt-[0px] ml-[13px]  flex gap-[17px]" style="width: clamp(300px, 34vw, 652px);">
-          <div id="UserIMG" class=" h-[15vh] relative flex justify-center items-start flex-col text-[17px] text-center"
-            style="width: clamp(300px, 16vw, 307px);;">
+          <div id="UserIMG"
+            class=" h-[15vh] relative flex justify-center items-start flex-col text-[17px] text-center w-[16vw]">
             <img src="" alt="" class="w-full h-[16vh] pt-[8px] object-cover" data-img>
             <span id="UserIMG--Name" class=" text-OffWhite">Your Image</span>
           </div>
           <div id="resultIMG"
-            class=" h-[15vh] relative flex justify-center items-start flex-col text-[17px] text-center"
-            style="width:clamp(300px, 16vw, 307px); ;">
+            class=" h-[15vh] relative flex justify-center items-start flex-col text-[17px] text-center w-[16vw]">
             <video class="w-full h-[15vh] pt-[8px] object-cover" src="${Video}" autoplay="true" loop="true"></video>
             <span id="UserIMG--Name" class=" text-OffWhite">Search Image</span>
           </div>
