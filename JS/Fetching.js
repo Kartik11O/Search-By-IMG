@@ -76,3 +76,6 @@ function removeNodes() {
   document.getElementById("Details").remove()
 }
 export { UserUrl }
+
+
+$("")
